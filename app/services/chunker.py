@@ -1,0 +1,28 @@
+from typing import List
+
+def chunk_text(text: str, chunk_size: int = 500, chunk_overlap: int = 100) -> List[str]:
+    #split text into overlapping character-based chunks
+    if not text:
+        return []
+    #if idea is split across chunk boundary, overlap preserves context
+    if chunk_overlap >= chunk_size:
+        raise ValueError("chunk_overlap must be less than chunk_size")
+    
+    chunks = []
+    start = 0
+    text_length = len(text)
+
+    while start < text_length:
+        end = min(start + chunk_size, text_length)
+        chunk = text[start:end].strip()
+
+        if chunk:
+            chunks.append(chunk)
+
+        if end == text_length:
+            break
+
+
+        start = end - chunk_overlap
+
+    return chunks
