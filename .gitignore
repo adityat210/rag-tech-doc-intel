@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pyc
+.env
+app/data/raw/*
+app/data/processed/*
+app/data/index/*
+!app/data/raw/.gitkeep
+!app/data/processed/.gitkeep
+!app/data/index/.gitkeep

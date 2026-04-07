@@ -1,0 +1,2 @@
+# domain-specific rag system for technical document intelligence
+retrieval-augmented generation pipeline for technical documents using parsing, chunking, embedding-based retrieval, and cited answer generation
