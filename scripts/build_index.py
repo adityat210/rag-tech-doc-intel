@@ -11,9 +11,6 @@ def main():
 
     print("loaded {0} chunks.".format(len(chunks)))
 
-    
-    
-
     texts = [chunk["text"] for chunk in chunks]
     metadata = [chunk["metadata"] for chunk in chunks]
 
@@ -26,6 +23,7 @@ def main():
     save_index(index, INDEX_DIR / "faiss.index")
     save_metadata(metadata, INDEX_DIR / "metadata.json")
 
+    #saving chunk_texts for retrieval return indices so can map to original chunk text and original metadata
     with (INDEX_DIR / "chunk_texts.json").open("w", encoding="utf-8") as f:
         json.dump(texts, f, indent=2, ensure_ascii=False)
 
@@ -35,4 +33,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
