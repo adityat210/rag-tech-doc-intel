@@ -9,7 +9,7 @@ def main():
     generator = Answers()
     answer = generator.generate_(query, retrieved_)
 
-    print(retrieved_[0])
+    #print(retrieved_[0])
 
     print("\nQuestion:", query)
     print("\nAnswer: ", answer["answer"])
