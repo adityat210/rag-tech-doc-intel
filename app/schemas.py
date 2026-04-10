@@ -5,7 +5,7 @@ class QueryRequest(BaseModel):
     query: str
     top_k: int = 3
 
-class RetrivedChunk(BaseModel):
+class RetrievedChunk(BaseModel):
     rank: int
     chunk_text: str
     citation: str
