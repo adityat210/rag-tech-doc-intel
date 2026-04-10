@@ -5,7 +5,7 @@ from app.services.generator import Answers
 from app.services.retriever import Retriever
 
 app = FastAPI(
-    title = "Domain-Specific RAG system for technical doc intelligence",
+    title = "RAG System for Technical Document Intelligence",
     version = "0.1.0",
 )
 
