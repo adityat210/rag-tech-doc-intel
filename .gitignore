@@ -8,3 +8,4 @@ app/data/index/*
 !app/data/raw/.gitkeep
 !app/data/processed/.gitkeep
 !app/data/index/.gitkeep
+logs/

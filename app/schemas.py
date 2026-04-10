@@ -13,4 +13,4 @@ class RetrievedChunk(BaseModel):
 class QueryResponse(BaseModel):
     answer: str
     citations: List[str]
-    retrieved_: List[RetrivedChunk]
+    retrieved_: List[RetrievedChunk]
