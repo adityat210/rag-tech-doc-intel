@@ -1,0 +1,14 @@
+[
+  {
+    "query": "what is the main topic of the document?",
+    "expected_source": "Greek Myth Essay Final Draft.pdf"
+  },
+  {
+    "query": "what themes are discussed in the document?",
+    "expected_source": "Greek Myth Essay Final Draft.pdf"
+  },
+  {
+    "query": "what does the document say about mythology?",
+    "expected_source": "Greek Myth Essay Final Draft.pdf"
+  }
+]
