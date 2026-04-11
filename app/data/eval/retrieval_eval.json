@@ -1,14 +1,54 @@
 [
   {
-    "query": "what is the main topic of the document?",
+    "query": "how does the essay argue that Simba follows a ritual rite of passage?",
     "expected_source": "Greek Myth Essay Final Draft.pdf"
   },
   {
-    "query": "what themes are discussed in the document?",
+    "query": "what parallels does the paper draw between Simba and Greek myths like Hermes and Io?",
     "expected_source": "Greek Myth Essay Final Draft.pdf"
   },
   {
-    "query": "what does the document say about mythology?",
+    "query": "how is Simba's journey connected to separation, liminal zone, and reintegration?",
     "expected_source": "Greek Myth Essay Final Draft.pdf"
+  },
+  {
+    "query": "why does the paper argue that media turns truth into entertainment and distraction?",
+    "expected_source": "AmusingOurselvesToDeathV2.pdf"
+  },
+  {
+    "query": "how does the essay use Brave New World and John the Savage to discuss truth and irrelevance?",
+    "expected_source": "AmusingOurselvesToDeathV2.pdf"
+  },
+  {
+    "query": "what does the paper say about superficial media distracting people from real issues?",
+    "expected_source": "AmusingOurselvesToDeathV2.pdf"
+  },
+  {
+    "query": "how does the research paper describe AI's impact on education and the workforce?",
+    "expected_source": "APResearchFinalPaperV1 .pdf"
+  },
+  {
+    "query": "what methodology does the AP research paper use to study AI in education?",
+    "expected_source": "APResearchFinalPaperV1 .pdf"
+  },
+  {
+    "query": "how does the paper define large language models and artificial intelligence?",
+    "expected_source": "APResearchFinalPaperV1 .pdf"
+  },
+  {
+    "query": "what role do ChatGPT release notes play in the AP research methodology?",
+    "expected_source": "APResearchFinalPaperV1 .pdf"
+  },
+  {
+    "query": "how does the philosophy paper explain happiness through hedonism?",
+    "expected_source": "PhilosophicalApproachHappiness.pdf"
+  },
+  {
+    "query": "what does the paper say about pleasure and pain in determining happiness?",
+    "expected_source": "PhilosophicalApproachHappiness.pdf"
+  },
+  {
+    "query": "how is experienced utility connected to happiness in the philosophy paper?",
+    "expected_source": "PhilosophicalApproachHappiness.pdf"
   }
 ]

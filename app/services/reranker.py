@@ -4,9 +4,12 @@ from typing import Dict, List
 class Reranker:
     #reranking that combines overlap with vector retrieval results
     def tokenizing(self, text: str):
-        #tokenize text into simple word tokens, lowercase
-        token = re.findall(r'\b\w+\b', text.lower())
-        return set(token)
+        stopwords = {
+            "the", "a", "an", "what", "does", "how", "is", "are", "of", "and",
+            "in", "to", "it", "this", "that", "paper", "document", "essay", "main"
+        }
+        token = re.findall(r"\b\w+\b", text.lower())
+        return {t for t in token if t not in stopwords}
     
     def lexical_overlap_score(self, query: str, chunk_text: str):
         #score chunk by fraction of unique tokens that appear in the chunk
@@ -32,7 +35,7 @@ class Reranker:
             vector_s = 1.0/(1.0 + vector_d)
 
             #create updated chunk dict with new scores, combined is weighted average of the two
-            combined_s = 0.7 * vector_s + 0.3 * lexical_s
+            combined_s = 0.85 * vector_s + 0.15 * lexical_s
             updated_ = dict(chunk)
             updated_["lexical_s"] = lexical_s
             updated_["vector_s"] = vector_s
