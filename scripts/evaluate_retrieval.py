@@ -42,7 +42,7 @@ def main():
 
         baseline_results = retriever.retrieve(query=query, top_k=3)
 
-        candidate_results = retriever.retrieve(query=query, top_k=10)
+        candidate_results = retriever.retrieve(query=query, top_k=15 or 20)
         reranked_results = reranker.rerank(query, candidate_results)[:3]
 
         baseline_hit1 = hit_at_k(baseline_results, expected_source, 1)

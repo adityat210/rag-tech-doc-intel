@@ -43,7 +43,7 @@ class Reranker:
             vector_s = 1.0/(1.0 + vector_d)
 
             #create updated chunk dict with new scores, combined is weighted average of the two
-            combined_s = 0.85 * vector_s + 0.15 * lexical_s
+            combined_s = 0.6 * vector_s + 0.4 * lexical_s
             updated_ = dict(chunk)
             updated_["lexical_s"] = lexical_s
             updated_["vector_s"] = vector_s

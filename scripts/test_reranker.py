@@ -29,9 +29,9 @@ def main():
     retriever = Retriever()
     reranker = Reranker()
 
-    baseline_results = retriever.retrieve(query=query, top_k=3)
+    baseline_results = retriever.retrieve(query=query, top_k=2)
 
-    candidates = retriever.retrieve(query=query, top_k=6)
+    candidates = retriever.retrieve(query=query, top_k=20)
     reranked_results = reranker.rerank(query, candidates)[:3]
 
     print_results("baseline Retrieval", baseline_results)
