@@ -20,8 +20,16 @@ class Reranker:
         if not query_:
             return 0.0
         
+        #overlap = query_.intersection(chunk_)
+        #return len(overlap) / len(query_)
         overlap = query_.intersection(chunk_)
-        return len(overlap) / len(query_)
+
+        # weight longer / more informative tokens higher
+        score = 0.0
+        for token in overlap:
+            score += len(token)
+
+        return score / (sum(len(t) for t in query_) + 1e-8)
     
     def rerank(self, query: str, retrieved_chunks: List[Dict[str, object]]):
         #rerank retrieved chunks, combining overlap and vector similarity

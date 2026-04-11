@@ -50,5 +50,38 @@
   {
     "query": "how is experienced utility connected to happiness in the philosophy paper?",
     "expected_source": "PhilosophicalApproachHappiness.pdf"
+  },
+  {
+    "query": "which paper discusses the concept of liminal zones and rites of passage?",
+    "expected_source": "Greek Myth Essay Final Draft.pdf"
+  },
+  {
+    "query": "which document analyzes the effects of entertainment media on truth and society?",
+    "expected_source": "AmusingOurselvesToDeathV2.pdf"
+  },
+  {
+    "query": "which paper studies artificial intelligence's impact on education using surveys?",
+    "expected_source": "APResearchFinalPaperV1 .pdf"
+  },
+  {
+    "query": "which document connects happiness to hedonism and pleasure vs pain?",
+    "expected_source": "PhilosophicalApproachHappiness.pdf"
+  },
+  {
+    "query": "which paper references Brave New World in discussing media and truth?",
+    "expected_source": "AmusingOurselvesToDeathV2.pdf"
+  },
+  {
+    "query": "which document discusses large language models and workforce implications?",
+    "expected_source": "APResearchFinalPaperV1 .pdf"
+  },
+  {
+    "query": "which essay analyzes Simba as part of a ritual coming-of-age process?",
+    "expected_source": "Greek Myth Essay Final Draft.pdf"
+  },
+  {
+    "query": "which paper evaluates happiness using experienced utility?",
+    "expected_source": "PhilosophicalApproachHappiness.pdf"
   }
+
 ]
