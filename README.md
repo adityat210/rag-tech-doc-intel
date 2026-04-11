@@ -23,3 +23,7 @@ Evaluation was performed on collection of 1,900 document chunks across multiple 
 - hit@1: 0.86
 - hit@3: 1.00
 - MRR: 0.92
+
+### Latency Stats
+- Avg latency: 1.9738 seconds
+- Median latency: 1.4455 seconds
